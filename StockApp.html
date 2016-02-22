@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="getStockInfo()">Track Stock</button>
+
+<p id="demo"></p>
+
+<script>
+function getStockInfo() {
+    var SymbolField = prompt("Please enter a symbol", "TWTR");
+    document.getElementById("demo").innerHTML =
+        "Symbol data should appear here";
+    
+}
+    
+//        I Believe these two  variables need to be in myfunction somewhere ... I think the first one contacts the yahoo API. 
+//        var url = "http://query.yahooapis.com/v1/public/yql";
+//        var symbol = $("#symbol").val();
+    
+</script>
+
+</body>
+</html>
