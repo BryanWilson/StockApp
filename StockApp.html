@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html>
+
+<head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+
+
+    <script>
+        function getValue() {
+            alert(document.getElementById("field").value);
+
+
+        }
+
+        // HOW TO GET JSON DATA WITH JQUEREY
+    </script>
+
+</head>
+
 <body>
 
-<button onclick="getStockInfo()">Track Stock</button>
+    Symbol:
+    <input id="field" type="text">
+    <input type="submit" value="Submit" onclick="getValue()">
 
-<p id="demo"></p>
 
-<script>
-function getStockInfo() {
-    var SymbolField = prompt("Please enter a symbol", "TWTR");
-    document.getElementById("demo").innerHTML =
-        "Symbol data should appear here";
-    
-}
-    
-//        I Believe these two  variables need to be in myfunction somewhere ... I think the first one contacts the yahoo API. 
-//        var url = "http://query.yahooapis.com/v1/public/yql";
-//        var symbol = $("#symbol").val();
-    
-</script>
+
+
+    <script>
+    </script>
 
 </body>
+
 </html>
